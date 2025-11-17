@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes Pastel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Recettes Pastel ! 🌿</h1>
+        <button id="showCategoriesBtn">Voir les catégories</button>
+        <input type="text" id="searchInput" placeholder="Rechercher une recette...">
+        <select id="filterTime">
+            <option value="">Filtrer par temps</option>
+            <option value="15">≤ 15 min</option>
+            <option value="30">≤ 30 min</option>
+            <option value="60">≤ 60 min</option>
+        </select>
+        <select id="filterDifficulty">
+            <option value="">Filtrer par difficulté</option>
+            <option value="facile">Facile</option>
+            <option value="moyen">Moyen</option>
+            <option value="difficile">Difficile</option>
+        </select>
+    </header>
+
+    <main>
+        <section id="categories" class="hidden">
+            <h2>Catégories</h2>
+            <div class="category-list">
+                <!-- Catégories générées par JS -->
+            </div>
+        </section>
+
+        <section id="recipes">
+            <!-- Recettes générées par JS -->
+        </section>
+
+        <section id="recipeDetail" class="hidden">
+            <!-- Détails d'une recette -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
